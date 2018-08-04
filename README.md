@@ -18,6 +18,8 @@ Since this is opens connections to ports and IPs concurrently, you'll need to se
 
 Generally, I would recommend setting it to 250 on Mac systems and 1000 on Kali or other Linux distros.
 
+When running a port sweep on a /16 network range, it takes about 1 minute to complete when you run with 1000 threads. It can run faster or slower depending on how many threads you set.
+
 ------------------------
 
 If you want to persistently up the ulimit on your host so that you can run more threads and complete the sweep faster, instructions are here:
